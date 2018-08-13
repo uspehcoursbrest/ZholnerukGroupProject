@@ -263,3 +263,193 @@ footer a[class*="icon"]{
     background-repeat: no-repeat;
 }
 
+.breadcrumbs a, li{
+    font-size: 12px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.clientWrap .left p{
+    font-size: 13px;
+    color: #333333;
+}
+
+.clientForm{
+    background-color: #f9f9f9;
+}
+
+.clientForm form label{
+    font-size: 13px;
+    color: #666666;
+    font-style: italic;
+}
+
+.chooseLogoAdd .drawing{
+    font-size: 13px;
+    color: #333333;
+}
+
+.chooseLogoAdd .waiting{
+    font-size: 11px;
+    color: #999999;
+}
+
+.chooseLogoAdd label{
+    font-size: 13px;
+    color: #666666;
+}
+
+.logoAdd input{
+    font-size: 13px;
+    color: #229647;
+    text-decoration: underline;
+}
+
+.logoAdd label{
+    font-size: 11px;
+    color: #999999;
+}
+
+.quantity, .workDate, .leftInfo label{
+    font-size: 13px;
+    color: #666666;
+    font-style: italic;
+}
+
+.formButton{
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #ff7200;
+    width: 130px;
+    height: 30px;
+    border: 0px;
+}
+
+.clientWrap .right h3{
+    font-size: 25px;
+    color: #333333;
+}
+
+.clientWrap .right p{
+    font-size: 13px;
+    color: #333333;
+}
+
+.clientButton{
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #64ba4a;
+    width: 195px;
+    height: 35px;
+    border: 0px;
+}
+
+.content h2{
+    font-size: 25px;
+    color: #333333;
+}
+
+.content h3{
+    font-size: 18px;
+    color: #333333;
+}
+
+.content .date{
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.content p{
+    font-size: 13px;
+    color: #333333;
+}
+
+.otherNews{
+    font-size: 13px;
+    color: #0069b4;
+}
+
+.orderForm fieldset{
+    border: 0px;
+}
+
+.chooseCity label{
+    font-size: 13px;
+    color: #666666;
+    font-style: italic;
+}
+
+.chooseCity option{
+    font-size: 13px;
+    color: #333333;
+}
+
+.chooseDeliv label{
+    font-size: 13px;
+    color: #333333;
+}
+
+.chooseDeliv span{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.chooseDeliv p{
+    font-size: 12px;
+    color: #666666;
+}
+
+.chooseDeliv .additional{
+    font-weight: normal;
+    font-size: 12px;
+    color: #f26522;
+}
+
+.delivInfo span{
+    font-size: 15px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.delivInfo label{
+    font-size: 13px;
+    color: #666666;
+    font-style: italic;
+}
+
+.choosePay span{
+    font-weight: 600;
+    font-size: 15px;
+    color: #333333;
+}
+
+.choosePay label{
+    font-size: 13px;
+    color: #333333;
+}
+
+.choosePay p{
+    font-size: 12px;
+    color: #666666;
+}
+
+.yourInfo span{
+    font-weight: 600;
+    font-size: 15px;
+    color: #333333;
+}
+
+.yourInfo label{
+    font-size: 13px;
+    color: #666666;
+    font-style: italic;
+}
+
+.yourInfo button{
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #ea5b0c;
+    width: 195px;
+    height: 35px;
+    border: 0px;
+}

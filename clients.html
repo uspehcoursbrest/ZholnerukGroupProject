@@ -26,7 +26,7 @@
         </div>
         <div class="logo">
             <a href="#">
-                <img src="" alt="logo">
+                <img src="img/png/logo.png" alt="logo">
             </a>
         </div>
         <div class="right">
@@ -34,8 +34,9 @@
                 <span class="icon-phone"></span>8 (495) 648-8-456
             </a>
             <a href="#" class="callback">Не дозвонились?</a>
-            <span class="timing">Мы работаем пн-пт 10:00 - 19:00</span>
-            <a href="#" class="basket">товаров <span>5</span> на сумму <span>2550&#8381;</span></a>
+            <p class="timing">Мы работаем пн-пт 10:00 - 19:00</p>
+            <a href="#" class="basket" style="background-image: url(img/png/basketl.png)">товаров <span>5</span> на
+                сумму <span>2550&#8381;</span></a>
         </div>
     </div>
 </header>
@@ -49,73 +50,87 @@
         <div class="clientWrap">
             <div class="left">
                 <p>Для расчета заказа заполните форму ниже, или позвоните нам 8 (495) 648-8-456</p>
-                <form action="#">
+                <div class="clientForm">
+                    <form action="#">
+                        <div>
+                            <label for="orgName">Название организации</label>
+                            <input type="text" name="orgName" id="orgName">
+                        </div>
+                        <div>
+                            <label for="contact">Контактное лицо</label>
+                            <input type="text" name="contact" id="contact">
+                        </div>
+                        <div>
+                            <label for="phoneNum">Номер телефона</label>
+                            <input type="text" name="phoneNum" id="phoneNum">
+                        </div>
+                    </form>
+                    <div class="chooseLogoAdd">
+                        <div>
+                            <span class="drawing">Нанесение логотипа</span>
+                            <span class="waiting">занимает 20 рабочих дней</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="radio" name="logoOn" id="logoOn1" checked>
+                                <label for="logoOn1">Да</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="logoOn" id="logoOn2">
+                                <label for="logoOn2">Нет</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logoAdd">
+                        <input type="file" name="addLogo" id="addLogo">
+                        <label for="addLogo">cdr, .ai, .eps, .tiff</label>
+                    </div>
+                    <div class="quantity">
+                        <label for="howMuch">Количество фигурок</label>
+                        <select name="howMuch" id="howMuch">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="workDate">
+                        <label for="date">Подготовить заказ к</label>
+                        <input type="text" name="date" id="date">
+                    </div>
+                    <div class="leftInfo">
+                        <label for="moreInfo">Дополнительная информация</label>
+                        <textarea name="moreInfo" id="moreInfo"></textarea>
+                    </div>
+                    <button class="formButton">Отправить</button>
+                </div>
+                <div class="right">
                     <div>
-                        <label for="orgName">Название организации</label>
-                        <input type="text" name="orgName" id="orgName">
+                        <h3>Свежий подарок</h3>
+                        <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь
+                            стильный и лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на
+                            рабочем месте, а нанесение логотипа вашей компании еще раз подчеркнет положительный образ в
+                            глазах клиента.</p>
+                        <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и
+                            подготовят ваш логотип для нанесения на фигурку.</p>
                     </div>
                     <div>
-                        <label for="contact">Контактное лицо</label>
-                        <input type="text" name="contact" id="contact">
+                        <h3>Разные образы</h3>
+                        <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь
+                            стильный и лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на
+                            рабочем месте, а нанесение логотипа вашей компании еще раз подчеркнет положительный образ в
+                            глазах клиента.</p>
+                        <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и
+                            подготовят ваш логотип для нанесения на фигурку.</p>
                     </div>
                     <div>
-                        <label for="phoneNum">Номер телефона</label>
-                        <input type="text" name="phoneNum" id="phoneNum">
+                        <h3>Фигурки на заказ</h3>
+                        <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь
+                            стильный и лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на
+                            рабочем месте, а нанесение логотипа вашей компании еще раз подчеркнет положительный образ в
+                            глазах клиента.</p>
+                        <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и
+                            подготовят ваш логотип для нанесения на фигурку.</p>
                     </div>
-                </form>
-                <div>
-                    <div>
-                        <span>Нанесение логотипа</span>
-                        <span>занимает 20 рабочих дней</span>
-                    </div>
-                    <ul>
-                        <li>
-                            <input type="radio" name="logoOn" id="logoOn1" checked>
-                            <label for="logoOn1">Да</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="logoOn" id="logoOn2">
-                            <label for="logoOn2">Нет</label>
-                        </li>
-                    </ul>
+                    <button class="clientButton">Скачать презентацию</button>
                 </div>
-                <div>
-                    <input type="file" name="addLogo" id="addLogo">
-                    <label for="addLogo">cdr, .ai, .eps, .tiff</label>
-                </div>
-                <div>
-                    <label for="howMuch">Количество фигурок</label>
-                    <select name="howMuch" id="howMuch">
-                        <option value=""></option>
-                    </select>
-                </div>
-                <div>
-                    <label for="date">Подготовить заказ к</label>
-                    <input type="text" name="date" id="date">
-                </div>
-                <div>
-                    <label for="moreInfo">Дополнительная информация</label>
-                    <textarea name="moreInfo" id="moreInfo"></textarea>
-                </div>
-                <button>Отправить</button>
-            </div>
-            <div class="right">
-                <div>
-                    <h3>Свежий	подарок</h3>
-                    <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь стильный и лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте, а нанесение логотипа вашей компании еще раз подчеркнет положительный образ в глазах клиента.</p>
-                    <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и подготовят ваш логотип для нанесения на фигурку.</p>
-                </div>
-                <div>
-                    <h3>Разные образы</h3>
-                    <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь стильный и лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте, а нанесение логотипа вашей компании еще раз подчеркнет положительный образ в глазах клиента.</p>
-                    <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и подготовят ваш логотип для нанесения на фигурку.</p>
-                </div>
-                <div>
-                    <h3>Фигурки на заказ</h3>
-                    <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь стильный и лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте, а нанесение логотипа вашей компании еще раз подчеркнет положительный образ в глазах клиента.</p>
-                    <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и подготовят ваш логотип для нанесения на фигурку.</p>
-                </div>
-                <button>Скачать презентацию</button>
             </div>
         </div>
     </div>
@@ -142,9 +157,9 @@
             <a href="mailto: ecocheloveki@gmail.com"></a>
             <span>пн-пт 10:00 - 19:00</span>
             <span>Ищите нас здесь</span>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="#" class="icon-soc3"></a>
+            <a href="#" class="icon-soc2"></a>
+            <a href="#" class="icon-soc1"></a>
         </div>
         <div>
             <span>© 2011-2014 Экочеловечки</span>
