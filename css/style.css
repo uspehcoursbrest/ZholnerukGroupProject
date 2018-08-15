@@ -28,6 +28,12 @@ input, button, textarea{
     padding: 0 15px;
 }
 
+.cfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 header .login {
     font-size: 13px;
     line-height: 18px;
@@ -38,6 +44,11 @@ header .menu a{
     font-size: 13px;
     line-height: 28px;
     color: #333333;
+}
+
+.menu li{
+    display: inline-block;
+    margin-right: 18px;
 }
 
 header .phone{
@@ -103,6 +114,18 @@ header .phone [class*="icon"]{
 
 .subscribe{
     background-color: #63b849;
+    width: 320px;
+    float: left;
+}
+
+.advantages{
+    width: calc(100% - 320px);
+    float: left;
+}
+
+.advantages .item{
+    width: 25%;
+    float: left;
 }
 
 .subscribe label{
@@ -135,6 +158,11 @@ header .phone [class*="icon"]{
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px dashed #666666;
+    display: inline-block;
+}
+
+.filter li+li{
+    margin-left: 15px;
 }
 
 .filter li a{
@@ -168,6 +196,8 @@ header .phone [class*="icon"]{
     font-weight: 600;
     line-height: 30px;
     color: #333333;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .card .price .old{
@@ -176,6 +206,8 @@ header .phone [class*="icon"]{
     line-height: 16px;
     text-decoration: line-through;
     color: #666666;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .card button{
@@ -217,6 +249,28 @@ footer{
     line-height: 22px;
     color: #ffffff;
     background-color: #64ba4a;
+}
+
+.footMenu{
+    width: 50%;
+    float: left;
+}
+
+.footMenu .col{
+    width: 50%;
+    float: left;
+}
+
+.contacts{
+    width: 25%;
+    float: left;
+    display: block;
+}
+
+.copyright{
+    width: 25%;
+    float: left;
+    display: block;
 }
 
 footer a{
@@ -305,7 +359,7 @@ footer a[class*="icon"]{
     text-decoration: underline;
 }
 
-.logoAdd label{
+.logoAdd span{
     font-size: 11px;
     color: #999999;
 }
@@ -417,7 +471,7 @@ footer a[class*="icon"]{
     font-style: italic;
 }
 
-.delivInfo p{
+.delivInfo label span{
     color: #ee393e;
 }
 
@@ -457,3 +511,6 @@ footer a[class*="icon"]{
     height: 35px;
     border: 0px;
 }
+
+
+
