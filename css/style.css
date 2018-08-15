@@ -299,7 +299,7 @@ footer a[class*="icon"]{
     color: #666666;
 }
 
-.logoAdd input{
+.logoAdd .textLogoAdd{
     font-size: 13px;
     color: #229647;
     text-decoration: underline;
@@ -415,6 +415,10 @@ footer a[class*="icon"]{
     font-size: 13px;
     color: #666666;
     font-style: italic;
+}
+
+.delivInfo p{
+    color: #ee393e;
 }
 
 .choosePay span{
