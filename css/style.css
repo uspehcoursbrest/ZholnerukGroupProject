@@ -243,6 +243,12 @@ header .phone [class*="icon"]{
     background-color: #ff7200;
 }
 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
 .socials h2{
     font-size: 18px;
     font-weight: 600;
