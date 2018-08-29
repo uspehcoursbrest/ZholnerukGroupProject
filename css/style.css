@@ -34,6 +34,14 @@ input, button, textarea{
     clear: both;
 }
 
+a{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
 header .table{
     display: table;
     width: 100%;
@@ -63,10 +71,18 @@ header .login {
     color: #0069b4;
 }
 
+header .login:hover{
+    text-decoration: none;
+}
+
 header .menu a{
     font-size: 13px;
     line-height: 28px;
     color: #333333;
+}
+
+header .menu a:hover{
+    text-decoration: none;
 }
 
 .menu li{
@@ -79,6 +95,15 @@ header .phone{
     line-height: 20px;
     color: #333333;
     text-decoration: none;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+header .phone:hover{
+    color: #1a9547;
 }
 
 header .callback{
@@ -87,6 +112,15 @@ header .callback{
     text-decoration: none;
     color: #0069b4;
     border-bottom: 1px dashed #0069b4;
+    -webkit-transition: border-bottom 0.3s;
+    -moz-transition: border-bottom 0.3s;
+    -ms-transition: border-bottom 0.3s;
+    -o-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+}
+
+header .callback:hover{
+    border-bottom: 1px dashed transparent;
 }
 
 header p.timing{
@@ -104,6 +138,15 @@ header .basket{
     padding-left: 28px;
     background-repeat: no-repeat;
     background-position: left center;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+header .basket:hover{
+    color: #1a9547;
 }
 
 header .basket span{
@@ -169,8 +212,18 @@ header .phone [class*="icon"]{
     line-height: 37px;
     text-align: center;
     color: #ffffff;
+    opacity: 1;
     background-color: #259c47;
     border: none;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.subscribe button:hover{
+    opacity: 0.7;
 }
 
 .subscribe .wrap span{
@@ -183,6 +236,15 @@ header .phone [class*="icon"]{
     line-height: 16px;
     border-bottom: 1px dashed #666666;
     display: inline-block;
+    -webkit-transition: border-bottom 0.3s;
+    -moz-transition: border-bottom 0.3s;
+    -ms-transition: border-bottom 0.3s;
+    -o-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+}
+
+.filter li:hover{
+    border-bottom: 1px dashed transparent;
 }
 
 .filter li+li{
@@ -192,6 +254,11 @@ header .phone [class*="icon"]{
 .filter li a{
     text-decoration: none;
     color: #666666;
+}
+
+.card{
+    position: relative;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .card .img{
@@ -239,8 +306,20 @@ header .phone [class*="icon"]{
     line-height: 32px;
     text-align: center;
     color: #ffffff;
-    border: none;
+    border: 1px solid transparent;
     background-color: #ff7200;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.card button:hover{
+    border: 1px solid #ff7200;
+    background-color: #fff;
+    color: #ff7200;
+
 }
 
 .cards{
