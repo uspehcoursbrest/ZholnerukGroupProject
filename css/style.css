@@ -42,6 +42,11 @@ a{
     transition: all 0.3s;
 }
 
+header{
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+
 header .table{
     display: table;
     width: 100%;
@@ -57,12 +62,14 @@ header .logo{
     display: table-cell;
     width: 33.3333%;
     vertical-align: top;
+    text-align: center;
 }
 
 header .right{
     display: table-cell;
     width: 33.3333%;
     vertical-align: top;
+    text-align: right;
 }
 
 header .login {
@@ -100,6 +107,7 @@ header .phone{
     -ms-transition: color 0.3s;
     -o-transition: color 0.3s;
     transition: color 0.3s;
+    display: block;
 }
 
 header .phone:hover{
@@ -169,6 +177,10 @@ header .phone [class*="icon"]{
     font-size: 20px;
 }
 
+.advSub{
+    padding-top: 30px;
+}
+
 .advantages{
     width: calc(100% - 320px);
     float: left;
@@ -185,12 +197,14 @@ header .phone [class*="icon"]{
     line-height: 17px;
     color: #333333;
     display: block;
+    padding-top: 25px;
 }
 
 .advantages .item p{
     font-size: 12px;
     line-height: 14px;
     color: #666666;
+    padding-top: 20px;
 }
 
 .subscribe{
@@ -202,13 +216,19 @@ header .phone [class*="icon"]{
 .subscribe label{
     font-size: 16px;
     color: #ffffff;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .subscribe input{
+    width: 280px;
+    height: 35px;
     font-size: 13px;
     line-height: 37px;
     color: #999999;
     border: none;
+    margin-top: 25px;
+    margin-left: 20px;
 }
 
 .subscribe button{
@@ -224,6 +244,8 @@ header .phone [class*="icon"]{
     -ms-transition: opacity 0.3s;
     -o-transition: opacity 0.3s;
     transition: opacity 0.3s;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
 .subscribe button:hover{
@@ -233,6 +255,10 @@ header .phone [class*="icon"]{
 .subscribe .wrap span{
     font-size: 12px;
     color: rgba(255,255,255,0.5);
+}
+
+.catalog{
+    margin-top: 30px;
 }
 
 .filter li{
@@ -260,6 +286,24 @@ header .phone [class*="icon"]{
     color: #666666;
 }
 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 35px;
+}
+
+.cards .card .status {
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: -3px;
+    width: 43px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+}
+
 .card{
     position: relative;
     border-bottom: 1px solid #e4e4e4;
@@ -278,12 +322,20 @@ header .phone [class*="icon"]{
     font-size: 15px;
     line-height: 22px;
     color: #333333;
+    display: block;
 }
 
 .card a{
     font-size: 15px;
     line-height: 22px;
     color: #0069b4;
+}
+
+.card .content .buy {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0px;
 }
 
 .card .price{
@@ -306,11 +358,16 @@ header .phone [class*="icon"]{
 }
 
 .card button{
+    width: 105px;
+    height: 32px;
     font-size: 14px;
-    line-height: 32px;
+    line-height: 16px;
     text-align: center;
     color: #ffffff;
     border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
     background-color: #ff7200;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -326,10 +383,25 @@ header .phone [class*="icon"]{
 
 }
 
-.cards{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+.card .content {
+    position: relative;
+    min-height: 95px;
+}
+
+.status.hit {
+    background-color: #6eddcc;
+}
+
+.status.discount {
+    background-color: #ffed03;
+}
+
+.status.new {
+    background-color: #78ec71;
+}
+
+.socials{
+    margin-top: 75px;
 }
 
 .socials h2{
@@ -343,6 +415,11 @@ header .phone [class*="icon"]{
 .socials .wrap{
     display: flex;
     justify-content: space-between;
+    margin-top: 65px;
+}
+
+.info{
+    margin-top: 55px;
 }
 
 .tabs li a{
@@ -350,6 +427,11 @@ header .phone [class*="icon"]{
     text-decoration: none;
     line-height: 45px;
     color: #999999;
+}
+
+.tabs li a:hover{
+    background-color: #f2fff7;
+    color: #1c9847;
 }
 
 .info .content{
@@ -397,6 +479,7 @@ footer{
     width: 25%;
     float: left;
     display: block;
+    text-align: right;
 }
 
 footer a{
@@ -451,25 +534,65 @@ footer a[class*="icon"]{
     background-repeat: no-repeat;
 }
 
-.breadcrumbs a, li{
+.breadcrumbs {
     font-size: 12px;
+    font-weight: normal;
+    line-height: 12px;
     color: #999999;
+    padding-bottom: 22px;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+}
+
+.breadcrumbs a {
     text-decoration: none;
+    color: #999999;
+}
+
+.clientWrap .left{
+    float: left;
 }
 
 .clientWrap .left p{
     font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
     color: #333333;
+    margin-bottom: 20px;
 }
 
 .clientForm{
     background-color: #f9f9f9;
+    width: 100%;
+    padding: 14px 10px 20px 10px;
 }
 
 .clientForm form label{
     font-size: 13px;
+    line-height: 22px;
     color: #666666;
     font-style: italic;
+}
+
+.clientWrap .left input {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #333333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.clientForm form .formInput{
+    width: 283px;
+    height: 27px;
+}
+
+.chooseLogoAdd .writeLogo{
+    width: 145px;
+    float: left;
 }
 
 .chooseLogoAdd .drawing{
@@ -482,9 +605,22 @@ footer a[class*="icon"]{
     color: #999999;
 }
 
+.chooseLogoAdd .chooseLogo{
+    width: calc(100% - 175px);
+    float: right;
+}
+
+.chooseLogoAdd .chooseLogo li{
+    display: inline-block;
+}
+
 .chooseLogoAdd label{
     font-size: 13px;
     color: #666666;
+}
+
+.logoAdd input{
+    visibility: hidden;
 }
 
 .logoAdd .textLogoAdd{
@@ -498,10 +634,20 @@ footer a[class*="icon"]{
     color: #999999;
 }
 
+.quantity select{
+    display: block;
+}
+
 .quantity, .workDate, .leftInfo label{
     font-size: 13px;
     color: #666666;
     font-style: italic;
+}
+
+.leftInfo textarea{
+    display: block;
+    width: 280px;
+    height: 120px;
 }
 
 .formButton{
@@ -532,28 +678,59 @@ footer a[class*="icon"]{
     border: 0px;
 }
 
-.content h3{
+.content .news h2{
+    margin-bottom: 40px;
+}
+
+.content .news h3{
     font-size: 18px;
     color: #333333;
 }
 
-.content .date{
+.content .news .date{
     font-size: 12px;
     color: #aaaaaa;
+    margin-bottom: 15px;
+    display: inline-block;
 }
 
-.content p{
+.newsImg {
+    background-color: #b3b3b3;
+    width: 100%;
+    height: 208px;
+    margin-bottom: 20px;
+}
+
+.content .news p{
     font-size: 13px;
     color: #333333;
+    margin-bottom: 20px;
+}
+
+.newsText {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 19px;
+    color: #333333;
+    margin-bottom: 28px;
 }
 
 .otherNews{
     font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
     color: #0069b4;
+    margin-bottom: 45px;
+    display: block;
 }
 
 .orderForm fieldset{
     border: 0px;
+}
+
+.orderForm input.full{
+    width: 290px;
+    height: 25px;
 }
 
 .chooseCity label{
@@ -562,29 +739,52 @@ footer a[class*="icon"]{
     font-style: italic;
 }
 
-.chooseCity option{
-    font-size: 13px;
-    color: #333333;
+.chooseCity {
+    margin-top: 14px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #e4e4e4;
 }
 
-.chooseDeliv label{
+.chooseCity select {
     font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
     color: #333333;
+    display: block;
 }
 
-.chooseDeliv span{
-    font-weight: 600;
+.chooseDeliv {
+    margin-top: 15px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.chooseDeliv span:first-child {
     font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 20px;
 }
 
-.chooseDeliv p{
+.chooseDeliv label {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 19px;
+    color: #333333;
+}
+
+.chooseDeliv p {
     font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
     color: #666666;
 }
 
-.chooseDeliv .additional{
-    font-weight: normal;
+.chooseDeliv .additional {
     font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
     color: #f26522;
 }
 
@@ -602,6 +802,37 @@ footer a[class*="icon"]{
 
 .delivInfo label span{
     color: #ee393e;
+}
+
+.delivInfo div {
+    margin-top: 9px;
+}
+
+.delivInfo input {
+    display: block;
+}
+
+.delivInfo textarea {
+    display: block;
+}
+
+.delivInfo .table .tCell {
+    display: inline-block;
+    padding-right: 39px;
+}
+
+.delivInfo .table .tCell input {
+    width: 57px;
+}
+
+.delivInfo .table .tCell:last-child input {
+    width: 95px;
+    padding-right: 0px;
+}
+
+.delivInfo div textarea {
+    width: 290px;
+    height: 105px;
 }
 
 .choosePay span{
