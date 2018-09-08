@@ -307,6 +307,7 @@ header .phone [class*="icon"]{
 .card{
     position: relative;
     border-bottom: 1px solid #e4e4e4;
+    z-index: 1;
 }
 
 .card .img{
@@ -388,6 +389,33 @@ header .phone [class*="icon"]{
     min-height: 95px;
 }
 
+.thumbnail{
+    position: absolute;
+    display: none;
+    top: -12px;
+    right: 2px;
+    padding: 11px;
+    width: 313px;
+    height: 356px;
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+    z-index: -1;
+}
+
+.thumbnail .pic{
+    margin-bottom: 10px;
+    width: 53px;
+    height: 53px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.thumbnail .pic.active{
+    border: 1px solid #259c47;
+}
+
 .status.hit {
     background-color: #6eddcc;
 }
@@ -451,6 +479,7 @@ header .phone [class*="icon"]{
 }
 
 footer{
+    margin-top: 55px;
     font-size: 13px;
     line-height: 22px;
     color: #ffffff;

@@ -1,5 +1,8 @@
-window.onload = function () {
-    send.onclick = function () {
-        alert("Спасибо за доверие. Мы свяжемся с вами максимально оперативно")
-    }
-}
+$(document).ready(function () {
+  $('.card').mouseover(function () {
+      $(this).find('.thumbnail').stop().fadeIn()
+  });
+  $('.card').mouseout(function () {
+      $(this).find('.thumbnail').stop().fadeOut()
+  });
+});
